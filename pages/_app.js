@@ -8,7 +8,7 @@ function App({ Component, pageProps }) {
     <>
       <Head>
         {/* Make a dot in between Erich Lehmann and CV */}
-        <title>Erich Lehmann · CV</title>
+        <title>Die Forschungszulage</title>
       </Head>
       <Component {...pageProps} />
       <Analytics />

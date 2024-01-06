@@ -6,16 +6,18 @@ function Home() {
   return (
     <>
       <Main>
+        <div className="h-8"></div>
         <Image
           width={400}
           height={400}
           src="/square_opti.jpg"
-          className="h-24 w-24 rounded-full -mb-6 mt-8"
+          className="h-24 w-24 rounded-full -mb-6"
           alt="Erich Lehmann"
         />
-        <Headline>Erich Lehmann</Headline>
+        <Headline>Hi, ich bin Erich,</Headline>
         <TextBlock className="mt-4">
-          ich helfe Startups dabei die Forschungszulage zu bekommen.
+          ich helfe Startups dabei die Forschungszulage zu bekommen. Diese Seite ist
+          gerade im Aufbau. Bis dahin, hier ein paar Links.
         </TextBlock>
         <TextBlock className="mt-6">
           {projects.map((project, i) => (
