@@ -2,8 +2,8 @@ function Headline({ children }) {
   return <h2 className="font-bold mt-12">{children}</h2>;
 }
 
-function TextBlock({ children }) {
-  return <div className="font-light flex flex-col gap-4 mt-4">{children}</div>;
+function TextBlock({ children, className }) {
+  return <div className={`font-light flex flex-col gap-4 ${className}`}>{children}</div>;
 }
 
 function Main({ children }) {
@@ -17,4 +17,4 @@ function Main({ children }) {
   );
 }
 
-export { Headline, TextBlock, Main };
+export { Headline, Main, TextBlock };
