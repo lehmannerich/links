@@ -14,7 +14,7 @@ function Home() {
           className="h-24 w-24 rounded-full -mb-6"
           alt="Erich Lehmann"
         />
-        <Headline>Hi, ich bin Erich,</Headline>
+        <Headline>Erich Lehmann</Headline>
         <TextBlock className="mt-4">
           ich helfe Startups dabei die Forschungszulage zu bekommen. Diese Seite ist
           gerade im Aufbau. Bis dahin, hier ein paar Links.
