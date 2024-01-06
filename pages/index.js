@@ -9,7 +9,7 @@ function Home() {
         <Image
           width={400}
           height={400}
-          src="/square.jpg"
+          src="/square_opti.jpg"
           className="h-24 w-24 rounded-full -mb-6 mt-8"
           alt="Erich Lehmann"
         />
