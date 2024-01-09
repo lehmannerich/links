@@ -34,7 +34,9 @@ function Home() {
                 <p className="text-lg font-medium">{reference.name}</p>
                 <p className="">{reference.position}</p>
                 <p className="h-4"></p>
-                <p className="font-bold text-sm bg-slate-500 text-white p-0.5 px-2 rounded-full">
+                <p
+                  className={`font-bold text-sm bg-slate-500 ${reference.color} text-white p-0.5 px-2 rounded-full`}
+                >
                   {reference.tagline}
                 </p>
               </div>
@@ -76,21 +78,30 @@ const references = [
   {
     name: "Imran Rehman",
     position: "Founder Kokoro",
-    tagline: "€79,456 in 6 hours",
+    tagline: "€79.456 in 6 Stunden",
     img: "/imran.jpg",
+    color: "bg-pink-800",
   },
   {
     name: "Marc Metz",
     position: "Founder MeetAnyway",
-    tagline: "€179,123 in 4 hours",
+    tagline: "€179.123 in 4 Stunden",
     img: "/marc.jpg",
+    color: "bg-blue-800",
   },
-
+  {
+    name: "Frank Steffen",
+    position: "Founder Camp3",
+    tagline: "€31.500 in 3 Stunden",
+    img: "/frank.jpg",
+    color: "bg-green-800",
+  },
   {
     name: "Florian Bauer",
     position: "Founder KiteKraft",
-    tagline: "€169,000 in 3 hours",
+    tagline: "€169.245 in 3 Stunden",
     img: "/florian.jpg",
+    color: "bg-yellow-800",
   },
 ];
 
