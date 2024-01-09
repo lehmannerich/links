@@ -30,7 +30,7 @@ function Home() {
         <TextBlock className="mt-4">
           {references.map((reference, i) => (
             <div key={i} className="flex gap-4 justify-between border rounded">
-              <div className="p-8 pb-0">
+              <div className="p-4 md:p-8 pb-0">
                 <p className="text-lg font-medium">{reference.name}</p>
                 <p className="">{reference.position}</p>
                 <p className="h-4"></p>
@@ -44,7 +44,7 @@ function Home() {
                 width={500}
                 height={500}
                 src={reference.img}
-                className="h-40 w-40 rounded rounded-l-none"
+                className="h-32 w-32 md:h-40 md:w-40 rounded rounded-l-none"
                 alt={reference.name}
               />
             </div>
