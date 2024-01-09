@@ -35,7 +35,7 @@ function Home() {
                 <p className="">{reference.position}</p>
                 <p className="h-4"></p>
                 <p
-                  className={`font-bold text-sm bg-slate-500 ${reference.color} text-white p-0.5 px-2 rounded-full`}
+                  className={`font-bold text-sm bg-slate-500 text-white p-0.5 px-2 rounded-full`}
                 >
                   {reference.tagline}
                 </p>
