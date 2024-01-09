@@ -78,14 +78,14 @@ const references = [
   {
     name: "Imran Rehman",
     position: "Founder Kokoro",
-    tagline: "€79.456 in 6 Stunden",
+    tagline: "€79.460 in 6 Stunden",
     img: "/imran.jpg",
     color: "bg-pink-800",
   },
   {
     name: "Marc Metz",
     position: "Founder MeetAnyway",
-    tagline: "€179.123 in 4 Stunden",
+    tagline: "€167.440 in 4 Stunden",
     img: "/marc.jpg",
     color: "bg-blue-800",
   },
@@ -94,14 +94,14 @@ const references = [
     position: "Founder Camp3",
     tagline: "€31.500 in 3 Stunden",
     img: "/frank.jpg",
-    color: "bg-green-800",
+    color: "bg-cyan-800",
   },
   {
     name: "Florian Bauer",
     position: "Founder KiteKraft",
-    tagline: "€169.245 in 3 Stunden",
+    tagline: "€169.250 in 3 Stunden",
     img: "/florian.jpg",
-    color: "bg-yellow-800",
+    color: "bg-amber-800",
   },
 ];
 
