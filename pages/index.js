@@ -22,17 +22,33 @@ function Home() {
           </p>
           <p>
             Ich bin spezialisiert auf die Forschungszulage, damit kann man 25% der
-            Personalkosten der letzten vier Jahre zurückerstattet bekommen. Ich habe{" "}
-            <span
-              className="underline cursor-pointer"
-              onClick={() => scrollToReferences()}
-            >
-              sehr gute Referenzen.
-            </span>{" "}
-            Es gibt ein paar Deadlines zu beachten, deshalb am besten direkt bei ihm
-            melden.
+            Personalkosten der letzten vier Jahre zurückerstattet bekommen. Es gibt ein
+            paar Deadlines zu beachten, deshalb am besten direkt bei ihm melden.
           </p>
         </TextBlock>
+        <Headline id="references">Referenzen</Headline>
+        <TextBlock className="mt-4">
+          {references.map((reference, i) => (
+            <div key={i} className="flex gap-4 justify-between border rounded">
+              <div className="p-8 pb-0">
+                <p className="text-lg font-medium">{reference.name}</p>
+                <p className="">{reference.position}</p>
+                <p className="h-4"></p>
+                <p className="font-bold text-sm bg-slate-500 text-white p-0.5 px-2 rounded-full">
+                  {reference.tagline}
+                </p>
+              </div>
+              <Image
+                width={500}
+                height={500}
+                src={reference.img}
+                className="h-40 w-40 rounded rounded-l-none"
+                alt={reference.name}
+              />
+            </div>
+          ))}
+        </TextBlock>
+        <Headline>Kontakt</Headline>
         <TextBlock className="mt-6">
           {projects.map((project, i) => (
             <a
@@ -50,57 +66,39 @@ function Home() {
             </a>
           ))}
         </TextBlock>
-        <Headline id="references">Referenzen</Headline>
-        <TextBlock className="mt-4">
-          {references.map((reference, i) => (
-            <div key={i} className="flex gap-4">
-              <Image
-                width={500}
-                height={500}
-                src={reference.img}
-                className="h-40 w-40 rounded"
-                alt={reference.name}
-              />
-              <div className="">
-                <p className="font-medium">{reference.tagline}</p>
-                <p className="">{reference.name}</p>
-                <p className="">{reference.position}</p>
-              </div>
-            </div>
-          ))}
-        </TextBlock>
+        <div className="h-8"></div>
       </Main>
     </>
   );
 }
 
-// create function "scrollToReferences"
-
-function scrollToReferences() {
-  const element = document.getElementById("references");
-  if (element) {
-    element.classList.add("bg-yellow-200");
-    setTimeout(() => {
-      element.classList.remove("bg-yellow-200");
-    }, 400);
-  }
-  window.scrollTo({ top: 1000, behavior: "smooth" });
-}
-
 const references = [
+  {
+    name: "Imran Rehman",
+    position: "Founder Kokoro",
+    tagline: "€79,456 in 6 hours",
+    img: "/imran.jpg",
+  },
   {
     name: "Marc Metz",
     position: "Founder MeetAnyway",
-    tagline: "€180k in 4h",
+    tagline: "€179,123 in 4 hours",
     img: "/marc.jpg",
+  },
+
+  {
+    name: "Florian Bauer",
+    position: "Founder KiteKraft",
+    tagline: "€169,000 in 3 hours",
+    img: "/florian.jpg",
   },
 ];
 
 const projects = [
-  {
-    title: "CV",
-    link: "https://erich.vercel.app/",
-  },
+  // {
+  //   title: "CV",
+  //   link: "https://erich.vercel.app/",
+  // },
   {
     title: "LinkedIn",
     link: "https://www.linkedin.com/in/erichlehmann/",
@@ -111,16 +109,16 @@ const projects = [
   },
   {
     title: "Email",
-    link: "mailto:erich@forschugnszulage.de",
+    link: "mailto:erich@dieforschungszulage.de",
   },
-  {
-    title: "Forschungszulage: Intro Video",
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7096829501967347712/",
-  },
-  {
-    title: "Forschungszulage: Notion Template",
-    link: "https://lehmannerich.gumroad.com/l/forschungszulage",
-  },
+  // {
+  //   title: "Forschungszulage: Intro Video",
+  //   link: "https://www.linkedin.com/feed/update/urn:li:activity:7096829501967347712/",
+  // },
+  // {
+  //   title: "Forschungszulage: Notion Template",
+  //   link: "https://lehmannerich.gumroad.com/l/forschungszulage",
+  // },
 ];
 
 export default Home;
