@@ -17,13 +17,14 @@ function Home() {
         <Headline>Erich Lehmann</Headline>
         <TextBlock className="mt-4">
           <p>
-            ich helfe Unternehmen unkompliziert Fördermittel zu bekommen. Antragstellung
-            ist in 4 calls erledigt. Honorar ist ausschließlich erfolgsbasiert.
+            ich helfe Unternehmen unkompliziert Fördermittel zu bekommen. Die
+            Antragstellung ist in 4 Calls erledigt. Das Honorar ist ausschließlich
+            erfolgsbasiert.
           </p>
           <p>
-            Ich bin spezialisiert auf die Forschungszulage, damit kann man 25% der
+            Ich bin spezialisiert auf die Forschungszulage. Damit kann man 25% der
             Personalkosten der letzten vier Jahre zurückerstattet bekommen. Es gibt ein
-            paar Deadlines zu beachten, deshalb am besten direkt bei ihm melden.
+            paar Deadlines zu beachten, deshalb am besten direkt bei mir melden.
           </p>
         </TextBlock>
         <Headline id="references">Referenzen</Headline>
