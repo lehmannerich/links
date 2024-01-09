@@ -126,10 +126,10 @@ const projects = [
   //   title: "Forschungszulage: Intro Video",
   //   link: "https://www.linkedin.com/feed/update/urn:li:activity:7096829501967347712/",
   // },
-  // {
-  //   title: "Forschungszulage: Notion Template",
-  //   link: "https://lehmannerich.gumroad.com/l/forschungszulage",
-  // },
+  {
+    title: "Forschungszulage Notion Template",
+    link: "https://lehmannerich.gumroad.com/l/forschungszulage",
+  },
 ];
 
 export default Home;
