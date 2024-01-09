@@ -1,5 +1,9 @@
-function Headline({ children }) {
-  return <h2 className="font-bold mt-12">{children}</h2>;
+function Headline({ children, id }) {
+  return (
+    <h2 className="font-bold mt-12 transition-all duration-700 rounded" id={id}>
+      {children}
+    </h2>
+  );
 }
 
 function TextBlock({ children, className }) {

@@ -16,8 +16,22 @@ function Home() {
         />
         <Headline>Erich Lehmann</Headline>
         <TextBlock className="mt-4">
-          ich helfe Startups dabei die Forschungszulage zu bekommen. Diese Seite ist
-          gerade im Aufbau. Bis dahin, hier ein paar Links.
+          <p>
+            ich helfe Unternehmen unkompliziert Fördermittel zu bekommen. Antragstellung
+            ist in 4 calls erledigt. Honorar ist ausschließlich erfolgsbasiert.
+          </p>
+          <p>
+            Ich bin spezialisiert auf die Forschungszulage, damit kann man 25% der
+            Personalkosten der letzten vier Jahre zurückerstattet bekommen. Ich habe{" "}
+            <span
+              className="underline cursor-pointer"
+              onClick={() => scrollToReferences()}
+            >
+              sehr gute Referenzen.
+            </span>{" "}
+            Es gibt ein paar Deadlines zu beachten, deshalb am besten direkt bei ihm
+            melden.
+          </p>
         </TextBlock>
         <TextBlock className="mt-6">
           {projects.map((project, i) => (
@@ -36,10 +50,51 @@ function Home() {
             </a>
           ))}
         </TextBlock>
+        <Headline id="references">Referenzen</Headline>
+        <TextBlock className="mt-4">
+          {references.map((reference, i) => (
+            <div key={i} className="flex gap-4">
+              <Image
+                width={500}
+                height={500}
+                src={reference.img}
+                className="h-40 w-40 rounded"
+                alt={reference.name}
+              />
+              <div className="">
+                <p className="font-medium">{reference.tagline}</p>
+                <p className="">{reference.name}</p>
+                <p className="">{reference.position}</p>
+              </div>
+            </div>
+          ))}
+        </TextBlock>
       </Main>
     </>
   );
 }
+
+// create function "scrollToReferences"
+
+function scrollToReferences() {
+  const element = document.getElementById("references");
+  if (element) {
+    element.classList.add("bg-yellow-200");
+    setTimeout(() => {
+      element.classList.remove("bg-yellow-200");
+    }, 400);
+  }
+  window.scrollTo({ top: 1000, behavior: "smooth" });
+}
+
+const references = [
+  {
+    name: "Marc Metz",
+    position: "Founder MeetAnyway",
+    tagline: "€180k in 4h",
+    img: "/marc.jpg",
+  },
+];
 
 const projects = [
   {
