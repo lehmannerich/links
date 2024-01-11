@@ -1,4 +1,4 @@
-import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
+import { ArrowTopRightOnSquareIcon, ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import { Headline, Main, TextBlock } from "../components/Structure";
 
@@ -33,7 +33,12 @@ function Home() {
             <div key={i} className="flex gap-4 justify-between border rounded">
               <div className="p-4 md:p-8 pb-0">
                 <p className="text-lg font-medium">{reference.name}</p>
-                <p className="">{reference.position}</p>
+                <p className="">
+                  {reference.position}
+                  <a href={reference.link} target="_blank" rel="noreferrer">
+                    <ArrowTopRightOnSquareIcon className="h-5 w-5 inline pb-1 m-1 text-stone-500 hover:text-stone-800" />
+                  </a>
+                </p>
                 <p className="h-4"></p>
                 <p
                   className={`font-bold text-sm bg-slate-500 text-white p-0.5 px-2 rounded-full`}
@@ -81,6 +86,7 @@ const references = [
     position: "Founder Kokoro",
     tagline: "€79.460 in 6 Stunden",
     img: "/imran.jpg",
+    link: "https://bekokoro.com/de/",
     color: "bg-pink-800",
   },
   {
@@ -88,6 +94,7 @@ const references = [
     position: "Founder MeetAnyway",
     tagline: "€167.440 in 4 Stunden",
     img: "/marc.jpg",
+    link: "https://meetanyway.com/welcome",
     color: "bg-blue-800",
   },
   {
@@ -95,6 +102,7 @@ const references = [
     position: "Founder Camp3",
     tagline: "€31.500 in 3 Stunden",
     img: "/frank.jpg",
+    link: "https://www.camp3.co/",
     color: "bg-cyan-800",
   },
   {
@@ -102,6 +110,7 @@ const references = [
     position: "Founder KiteKraft",
     tagline: "€169.250 in 3 Stunden",
     img: "/florian.jpg",
+    link: "https://kitekraft.de/",
     color: "bg-amber-800",
   },
 ];
