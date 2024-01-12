@@ -36,12 +36,12 @@ function Home() {
                 <p className="">
                   {reference.position}
                   <a href={reference.link} target="_blank" rel="noreferrer">
-                    <ArrowTopRightOnSquareIcon className="h-5 w-5 inline pb-1 m-1 text-stone-500 hover:text-stone-800" />
+                    <ArrowTopRightOnSquareIcon className="h-5 w-5 inline pb-1 m-1 text-stone-500 hover:text-stone-800 print:hidden print:text-stone-800" />
                   </a>
                 </p>
                 <p className="h-4"></p>
                 <p
-                  className={`font-bold text-sm bg-slate-500 text-white p-0.5 px-2 rounded-full`}
+                  className={`font-bold inline text-sm bg-slate-500 text-white p-0.5 px-2 rounded-full print:pl-0`}
                 >
                   {reference.tagline}
                 </p>
@@ -84,7 +84,7 @@ const references = [
   {
     name: "Imran Rehman",
     position: "Founder Kokoro",
-    tagline: "€79.460 in 6 Stunden",
+    tagline: "€79.460 in 5 Calls",
     img: "/imran.jpg",
     link: "https://bekokoro.com/de/",
     color: "bg-pink-800",
@@ -92,7 +92,7 @@ const references = [
   {
     name: "Marc Metz",
     position: "Founder MeetAnyway",
-    tagline: "€167.440 in 4 Stunden",
+    tagline: "€167.440 in 4 Calls",
     img: "/marc.jpg",
     link: "https://meetanyway.com/welcome",
     color: "bg-blue-800",
@@ -100,7 +100,7 @@ const references = [
   {
     name: "Frank Steffen",
     position: "Founder Camp3",
-    tagline: "€31.500 in 3 Stunden",
+    tagline: "€31.500 in 3 Calls",
     img: "/frank.jpg",
     link: "https://www.camp3.co/",
     color: "bg-cyan-800",
@@ -108,7 +108,7 @@ const references = [
   {
     name: "Florian Bauer",
     position: "Founder KiteKraft",
-    tagline: "€169.250 in 3 Stunden",
+    tagline: "€169.250 in 3 Calls",
     img: "/florian.jpg",
     link: "https://kitekraft.de/",
     color: "bg-amber-800",
