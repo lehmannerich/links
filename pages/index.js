@@ -59,17 +59,22 @@ function Home() {
         <div className="print:hidden">
           <Headline>Kontakt</Headline>
           <TextBlock className="mt-6">
-            {projects.map((project, i) => (
+            {contact_items.map((contact, i) => (
               <a
                 key={i}
-                href={project.link}
+                href={contact.link}
                 target="_blank"
                 rel="noreferrer"
                 className="p-4 rounded flex items-center justify-between group hover:bg-stone-50 border"
               >
                 <div>
-                  <p className="font-medium">{project.title}</p>
-                  {/* <p className="text-stone-500">{project.description}</p> */}
+                  <p className="font-medium">
+                    {contact.title}
+                    {i === 0 && (
+                      <span className="text-sm text-gray-500"> (preferred)</span>
+                    )}
+                  </p>
+                  {/* <p className="text-stone-500">{contact.description}</p> */}
                 </div>
                 <ArrowUpRightIcon className="h-4 w-4 group-hover:h-5 group-hover:w-5 inline pb-1 text-neutral-400 group-hover:text-neutral-800 transition" />
               </a>
@@ -117,18 +122,18 @@ const references = [
   },
 ];
 
-const projects = [
+const contact_items = [
   // {
   //   title: "CV",
   //   link: "https://erich.vercel.app/",
   // },
   {
-    title: "LinkedIn",
-    link: "https://www.linkedin.com/in/erichlehmann/",
+    title: "Book a Call",
+    link: "https://calendly.com/meetanyway/erich",
   },
   {
-    title: "Calendly",
-    link: "https://calendly.com/meetanyway/erich",
+    title: "LinkedIn",
+    link: "https://www.linkedin.com/in/erichlehmann/",
   },
   {
     title: "Email",
