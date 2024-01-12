@@ -56,24 +56,26 @@ function Home() {
             </div>
           ))}
         </TextBlock>
-        <Headline>Kontakt</Headline>
-        <TextBlock className="mt-6">
-          {projects.map((project, i) => (
-            <a
-              key={i}
-              href={project.link}
-              target="_blank"
-              rel="noreferrer"
-              className="p-4 rounded flex items-center justify-between group hover:bg-stone-50 border"
-            >
-              <div>
-                <p className="font-medium">{project.title}</p>
-                {/* <p className="text-stone-500">{project.description}</p> */}
-              </div>
-              <ArrowUpRightIcon className="h-4 w-4 group-hover:h-5 group-hover:w-5 inline pb-1 text-neutral-400 group-hover:text-neutral-800 transition" />
-            </a>
-          ))}
-        </TextBlock>
+        <div className="print:hidden">
+          <Headline>Kontakt</Headline>
+          <TextBlock className="mt-6">
+            {projects.map((project, i) => (
+              <a
+                key={i}
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                className="p-4 rounded flex items-center justify-between group hover:bg-stone-50 border"
+              >
+                <div>
+                  <p className="font-medium">{project.title}</p>
+                  {/* <p className="text-stone-500">{project.description}</p> */}
+                </div>
+                <ArrowUpRightIcon className="h-4 w-4 group-hover:h-5 group-hover:w-5 inline pb-1 text-neutral-400 group-hover:text-neutral-800 transition" />
+              </a>
+            ))}
+          </TextBlock>
+        </div>
         <div className="h-8"></div>
       </Main>
     </>
