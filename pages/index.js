@@ -128,7 +128,7 @@ const contact_items = [
   //   link: "https://erich.vercel.app/",
   // },
   {
-    title: "Book a Call",
+    title: "Meeting buchen",
     link: "https://calendly.com/meetanyway/erich",
   },
   {
