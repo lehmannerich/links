@@ -131,13 +131,17 @@ const contact_items = [
     title: "Meeting buchen",
     link: "https://calendly.com/meetanyway/erich",
   },
+  // {
+  //   title: "LinkedIn",
+  //   link: "https://www.linkedin.com/in/erichlehmann/",
+  // },
   {
-    title: "LinkedIn",
-    link: "https://www.linkedin.com/in/erichlehmann/",
+    title: "Email an Erich Lehmann",
+    link: "mailto:erich@dieforschungszulage.de",
   },
   {
-    title: "Email",
-    link: "mailto:erich@dieforschungszulage.de",
+    title: "Mehr über Lehmann Ventures",
+    link: "https://www.lehmannventures.de/",
   },
   // {
   //   title: "Forschungszulage: Intro Video",
