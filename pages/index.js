@@ -129,7 +129,7 @@ const contact_items = [
   // },
   {
     title: "Meeting buchen",
-    link: "https://calendly.com/meetanyway/erich",
+    link: "https://cal.com/lehmannventures/30min",
   },
   // {
   //   title: "LinkedIn",
