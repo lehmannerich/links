@@ -89,6 +89,14 @@ function Home() {
 
 const references = [
   {
+    name: "Fabio Schmidberger",
+    position: "Founder voize",
+    tagline: "€314.825 in 4 Calls",
+    img: "/fabio.jpg",
+    link: "https://www.voize.de/",
+    color: "bg-pink-800",
+  },
+  {
     name: "Imran Rehman",
     position: "Founder Kokoro",
     tagline: "€79.460 in 5 Calls",
